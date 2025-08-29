@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌡️</text></svg>">
+    <link rel="stylesheet" href="responsive.css">
+    <title>App Weather in JavaScript</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-section">
+            <div class="input-wrapper">
+                <span class="material-symbols-rounded">search</span>
+                <input type="search" class="search-input" placeholder="Informe uma Cidade">
+            </div>
+            <button class="location-button">
+                <span class="material-symbols-rounded">my_location</span>
+            </button>
+        </div>
+
+        <div class="weather-section">
+            <div class="current-weather">
+                <img src="./imgs/clouds.svg" alt="" class="weather-icon">
+                <h2 class="temperature">00 <span>°C</span></h2>
+                <p class="description">Weather Description</p>
+            </div>
+
+            <div class="hourly-weather">
+                <ul class="weather-list"></ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
